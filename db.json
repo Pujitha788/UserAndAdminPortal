@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Virat",
+      "img": "https://www.aljazeera.com/wp-content/uploads/2025/05/GettyImages-2191430694-1747034199.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Bumrah",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAYIThdbVfudSwzjbn90jqWcLcB8RR1OptWA"
+    },
+    {
+      "id": "4",
+      "name": "Hardik",
+      "img": "https://images.moneycontrol.com/static-mcnews/2023/03/hardik-pandya-770x433.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Dhoni",
+      "img": "https://w0.peakpx.com/wallpaper/479/722/HD-wallpaper-ms-dhoni-india-world-cup-cricket.jpg"
+    },
+    {
+      "id": "2",
+      "name": "shreyas",
+      "img": "https://mum-objectstore.e2enetworks.net/tringcoin/A_List_Star/shreyas-iyer.jpg"
+    }
+  ]
+}

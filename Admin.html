@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Portal</title>
+  <link rel="stylesheet" href="./Admin.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>Admin Dashboard</h1>
+  </header>
+
+  <main class="layout">
+
+    <section class="admin-card">
+      <h2>Add / Update User</h2>
+
+      <input type="text" placeholder="Enter Id" id="ids">
+      <input type="text" placeholder="Enter Name" id="names">
+      <input type="text" placeholder="Enter Image Link" id="imglink">
+
+      <button id="savebtn">Save Data</button>
+    </section>
+
+    <section class="list-card">
+      <h2>Stored Data</h2>
+      <div class="save"></div>
+    </section>
+
+  </main>
+
+  <script src="./admin.js"></script>
+</body>
+</html>
