@@ -1,6 +1,6 @@
 let container = document.getElementById("container")
 async function getData(){
-    let res = await fetch("http://localhost:3000/data"); 
+    let res = await fetch("https://crud-backend-7vy5.onrender.com/data"); 
     try {
         if (!res.ok) {
             throw new Error("Something wrong in displaying details");

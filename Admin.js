@@ -1,5 +1,5 @@
 async function showAllData() {
-  let res = await fetch(`http://localhost:3000/data`);
+  let res = await fetch("https://crud-backend-7vy5.onrender.com/data");
   try {
     if (!res.ok) {
       throw new Error("Something wrong in displaying details");
@@ -16,7 +16,7 @@ async function showAllData() {
 showAllData();
 
 async function getData(id) {
-  let res = await fetch(`http://localhost:3000/data/${id}`);
+  let res = await fetch(`https://crud-backend-7vy5.onrender.com/data/${id}`);
   try {
     if (!res.ok) {
       throw new Error("Something wrong in displaying details");
@@ -59,7 +59,7 @@ savebtn.addEventListener("click", async () => {
     savebtn.innerHTML="SAVE DATA"
     ids.readOnly=false;
   } else {
-    let res = await fetch("http://localhost:3000/data", {
+    let res = await fetch("https://crud-backend-7vy5.onrender.com/data", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -85,7 +85,7 @@ savebtn.addEventListener("click", async () => {
 });
 
 async function deleteData(id) {
-  let res = await fetch(`http://localhost:3000/data/${id}`, {
+  let res = await fetch(`https://crud-backend-7vy5.onrender.com/data/${id}`, {
     method: "DELETE",
   });
   try {
@@ -106,7 +106,7 @@ let editId = null;
 async function editData(id) {
   savebtn.innerHTML = "UPDATE DATA";
   let updatebtn = document.getElementById("updatebtn");
-  let response = await fetch(`http://localhost:3000/data/${id}`);
+  let response = await fetch(`https://crud-backend-7vy5.onrender.com/data/${id}`);
   try {
     if (!response.ok) {
       throw new Error("Something wrong in getting data");
@@ -123,7 +123,7 @@ async function editData(id) {
 }
 
 async function updateData(id) {
-  let res = await fetch(`http://localhost:3000/data/${id}`, {
+  let res = await fetch(`https://crud-backend-7vy5.onrender.com/data/${id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -142,7 +142,7 @@ async function updateData(id) {
     save.innerHTML = "";
     showAllData();
     ids.value = "";
-  names.value = "";
+  names.value = ""; 
   imglink.value = "";
   } catch (error) {
     console.log(error.message);
